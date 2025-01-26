@@ -1,0 +1,244 @@
+body{
+    background-color: #1b170a;
+}
+
+.about_us_section{
+    position: absolute;
+    align-items: center;
+}
+.AboutUs-background{
+    text-align: center;
+    
+}
+.h1_about_us{
+    font-size:50px;
+    color: #f9b326;
+    text-align:center;
+    padding-top:30px;
+    font-family:"Century Gothic", cursive;
+}
+
+.image_card{
+    height:430px;
+    width:270px;
+    float:left;
+    margin:30px;
+    box-shadow: 10px 10px 5px grey;
+}
+.image_us{
+    height:360px;
+    width:100%;
+}
+
+.image_us:hover {
+    opacity:0.5;
+}
+
+.image_card_text{
+    font-size:30px;
+    font-family:"Poppins Medium";
+    color: #e6dcea;
+    text-align:center;
+    padding:3px;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffd151;
+    padding: 10px 20px;
+}
+
+.logo_p {
+    width: 10%;
+    height: auto;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.logo {
+    font-size: 30px;
+    font-family: "Sriracha", cursive;
+    color: #000;
+    text-decoration: none;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    float: left;
+}
+ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+background-color: #e6b13d;
+font-family: Arial, sans-serif;
+}
+
+li {
+float: left;
+}
+
+li a {
+display: block;
+color: rgb(0, 0, 0);
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+
+li a:hover:not(.active) {
+background-color: #d9a249;
+}
+
+.active {
+background-color: #7a602e;
+}
+
+.footer {
+    width: 100%;
+    background: #e0b868;
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.social-icon,
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.social-icon__item,
+.menu__item {
+    list-style: none;
+}
+
+.social-icon__link {
+    font-size: 2rem;
+    color: #000000;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+.social-icon__link:hover {
+    transform: translateY(-10px);
+}
+
+.menu__link {
+    font-size: 1.2rem;
+    color: #000000;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+    text-decoration: none;
+    opacity: 0.75;
+    font-weight: 300;
+}
+
+.menu__link:hover {
+    opacity: 1;
+}
+
+.footer p {
+    color: #000000;
+    margin: 15px 0 10px 0;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+/*.Sub_Sections .overlay{*/
+/*    position: absolute;*/
+/*    top: 0;*/
+/*    left: 0;*/
+/*    width: 100%;*/
+/*    height: 100%;*/
+/*    opacity: 0;*/
+/*    transition: opacity 0.3s ease-in-out;*/
+/*    background-color: rgba(0, 0, 0, 0.7);*/
+/*    color: #fff;*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    text-align: center;*/
+/*    visibility: hidden;*/
+/*}*/
+/*.Sub_Sections:hover .overlay {*/
+/*    opacity: 1;*/
+/*    visibility: visible;*/
+/*}*/
+
+/*.Sub_Sections .overlay h3 {*/
+/*    margin-top: 0;*/
+/*    font-size: 1.2rem;*/
+/*    font-family: Georgia;*/
+/*}*/
+/*.Sub_Sections .overlay h4 {*/
+/*    margin-top: 0;*/
+/*    font-size: 1.0rem;*/
+/*    font-family: Georgia, cursive;*/
+/*}*/
+
+/*!* Style the image cards *!*/
+/*.image_card {*/
+/*    display: inline-block;*/
+/*    position: relative;*/
+/*    margin: 20px;*/
+/*}*/
+
+/*!* Style the images *!*/
+/*.image_us {*/
+/*    display: block;*/
+/*    width: 100%;*/
+/*    height: auto;*/
+/*    border-radius: 50%;*/
+/*}*/
+
+/* Style the overlay */
+.overlay {
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Set the text color of the overlay */
+.overlay h3, .overlay h4 {
+    color: white;
+}
+
+/* Set the font size of the overlay */
+.overlay h3 {
+    font-size: 24px;
+    text-align: center;
+    position: relative;
+}
+
+.overlay h4 {
+    font-size: 18px;
+    text-align: center;
+    margin: 50px;
+    padding: 5px;
+    position: relative;
+}
+
+/* Add the overlay when hovering over the image */
+.image_card:hover .overlay {
+    height:inherit;
+}
+
